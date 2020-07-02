@@ -1,0 +1,5 @@
+<h4>Name: <%= @destination.name%> </h4>
+
+<h4>Recent Posts: <%= @destination.recent_posts%> </h4>
+
+<h4>Featured Post: <%= link_to @destination.featured_post.title, "/posts/#{@destination.featured_post.id}"%> </h4>

@@ -1,0 +1,14 @@
+<h4>Name: <%= @blogger.name%> </h4>
+
+<h4> Destination: </h4>
+<ul>
+    <% @blogger.destinations.each do |destination| %>
+    <li> 
+        <%= destination.name %>
+    </li>
+    <% end %>
+</ul>
+
+<h4> Total Likes: <%= @blogger.total_likes%> </h4>
+
+<h4> Featured Post: <%= @blogger.featured_post%> </h4>

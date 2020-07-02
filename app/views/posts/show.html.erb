@@ -1,0 +1,18 @@
+<h4>
+    Title: <%= @post.title%> 
+</h4>
+
+<h4>
+    Blogger:  <%= link_to @post.blogger.name, "/bloggers/#{@post.blogger.id}"%>
+</h4>
+
+<h4>
+    Destination:  <%= link_to @post.destination.name, "/destinations/#{@post.destination.id}"%>
+</h4>
+
+<h4>
+    Like:  <%= @post.likes %>
+</h4>
+
+<%= button_to "Like", post_path(@post), method: :patch %>
+
